@@ -1,0 +1,136 @@
+<html>
+<head>
+
+  <title>Transaction History</title>
+
+  <script>
+    function display()
+    {
+      document.getElementById("displayarea").innerHTML = document.getElementById("fname").value; 
+      document.getElementById("fname").value = "";
+      document.getElementById("displayarea1").innerHTML = document.getElementById("lname").value; 
+      document.getElementById("lname").value = "";
+      document.getElementById("displayarea2").innerHTML = document.getElementById("amount").value; 
+      document.getElementById("amount").value = "";
+
+    }
+  </script>
+  <style>
+    body {
+    
+    background-image:url(background.jpg);
+    background-color:none;
+	background-repeat: no-repeat;
+		 background-size:cover;
+  
+    }
+    input[type=button]{
+    border:none;
+    color:black;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    background-color:aqua;
+    }
+    input.intro{
+    width: 25%;
+    height: 8%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    }
+    form{
+    display: block;
+    box-sizing: border-box;
+    box-shadow: #111;
+    font-size:x-large;
+    color:black;
+    }
+    body {
+    text-align: center;
+    }
+    table{
+    width: 70%;
+    } 
+    ul{
+    list-style-type: none;
+    font-size: 26px;
+    margin: 50px;
+    padding: 0;
+    overflow: hidden;
+    }
+    li {
+    display: inline;
+    float: right;
+    }
+    li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 24px;
+    }
+   li a:hover {
+    background-color:skyblue;
+    }
+    h2{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        color:black;
+        text-transform: uppercase;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular';
+        
+     
+    }
+    
+    
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="customer.html">Customer</a></li> 
+    <li><a href="index.html">Home Page</a></li>
+    
+    <h2>------Money Transfer------</h2>
+    
+    
+    
+
+
+  </ul>
+  <form name="form1" id="form1">
+    Sender
+    <input type="email"  class="intro"name="fname" id="fname"><br><br>
+    Receiver
+    <input type="email"class="intro" name="lname" id="lname"><br><br>
+    Amount
+    <input type="number" class="intro" name="amount" id="amount"><br><br>
+    <input type="button" value="Transfer" name="submit" id="submit" onClick="display()"></td>
+  </form>
+  <style>
+    h2,h3 span {
+        text-decoration: underline;
+    
+    }
+  </style>
+  <center>
+   <h3>Transaction History</h3>
+  </center>
+  <table width="400px" align="center" border=0> 
+    <tr style="background-color:yellow;">
+      <td align="center"><b>Sender</b></td>
+      <td align="center"><b>Receiver</b></td>
+      <td align="center"><b>Amount</b></td>
+    </tr> 
+    <tr>
+      <td align="center"><div id="displayarea"></div></td>
+      <td align="center"><div id="displayarea1"></div></td>
+      <td align="center"><div id="displayarea2"></div></td>
+    </tr>
+  </table>
+</body>
+</html>
